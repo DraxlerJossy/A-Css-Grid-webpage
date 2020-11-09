@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: cadetblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: larger;
+  font-weight: 400;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home {
+  background-image: url(../images/12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+/*NAVS*/
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 217, 255);
+  position: relative;
+}
+
+.logo a {
+  font-size: 2rem;
+  padding-bottom: px;
+}
+
+.topnav #menu-header {
+  display: flex;
+  position: absolute;
+  right: 10%;
+  top: 0;
+  display: none;
+}
+
+.topnav a {
+  color: rgb(255, 250, 250);
+  padding: 14px 16px;
+  display: block;
+}
+
+
+.topnav a.icon {
+  background: rgb(139, 100, 100);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  color: rgb(172, 12, 12);
+}
+
+.topnav .active {
+  background: blue;
+}
+
+@media screen and (min-width: 700px) {
+  .topnav a.icon {
+    display: none;
+  }
+}
+
+
+/*NAVS END*/
+
+#home h1 {
+  color: rgb(0, 4, 255);
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 3rem;
+  font-family: tahoma;
+}
+
+#home h1 span {
+  color: rgb(255, 217, 0);
+  font-family: comic sans ms;
+}
+
+#home p {
+  color: rgb(238, 255, 0);
+  text-align: center;
+  padding-bottom: 50px;
+  font-weight: 600;
+  font-size: 2.1rem;
+}
+
+.homebtn {
+  width: 110px;
+  height: 45px;
+  font-size: x-large;
+  border: 2px solid rgb(236, 233, 13);
+  border-radius: 25px;
+  background: cornflowerblue;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 50px;
+}
+
+#home button:hover {
+  background: blue;
+}
+
+@media screen and (max-width: 700px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 1.5rem;
+  }
+}
+
+#About {
+  background: #fff;
+  background-image: url(../images/1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.About-1 {
+  max-width: 760px;
+  margin: auto;
+  border: #fff solid 3px;
+}
+
+.small-img {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-gap: 5px;
+}
+
+#About h3 {
+  color: chartreuse;
+}
+
+@media screen and (max-width: 750px) {
+  #About {
+    background-image: none;
+  }
+
+  .big-img {
+    display: none;
+  }
+
+  .small-img {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+}
+
+#About h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#Day {
+  border-radius: 5px;
+  margin-left: 300px;
+}
+
+#About form {
+  background: grey;
+}
+
+#About input {
+  background: cornflowerblue;
+}
+
+.reservation {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+}
+
+.reserve {
+  color: #fff;
+  background: red;
+  border-radius: 5px;
+  width: 9rem;
+  margin-left: 4px;
+}
+
+.reserve:hover {
+  background: blue;
+}
+
+#more-services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 20px;
+  grid-gap: 9px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.pics {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 5px;
+  background: cadetblue;
+}
+
+.pic-1 {
+  background-color: bisque;
+  text-align: center;
+  width: 70%;
+}
+
+.text1 {
+  display: flex;
+  align-self: end;
+  text-align: center;
+  flex-direction: column;
+}
+
+.btn1 {
+  width: 110px;
+  height: 45px;
+  font-size: x-large;
+  border: 2px solid rgb(236, 233, 13);
+  border-radius: 25px;
+  background: cornflowerblue;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  margin-left: 20rem;
+}
+
+.btn1:hover {
+  background: blue;
+}
+
+@media screen and (max-width: 700px) {
+  .pics {
+    display: none;
+  }
+
+  .text1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn1 {
+    display: flex;
+    margin-top: 10px;
+    align-self: right;
+  }
+
+  .text2 {
+    color: wheat;
+  }
+
+  .text2 h4 {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .text2 {
+    display: none;
+  }
+}
+
+#contacts {
+  text-align: center;
+  background: url(../images/15.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+}
+
+.h2form {
+  color: #fff;
+  font-weight: 100;
+}
+
+#contacts form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: auto;
+}
+
+#contacts form input,
+#contacts form textarea {
+  width: 100%;
+  outline: non;
+  border: none;
+  padding: 5px 10px;
+}
+
+#contacts form input {
+  border-radius: 50px;
+  margin-bottom: 50px;
+  border: none;
+}
+
+#contacts form textarea {
+  resize: none;
+  height: 130px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+#contacts form input[type="submit"] {
+  width: 40%;
+  height: 40px;
+  background-color: rgb(8, 189, 189);
+  color: #fff;
+  margin: 0 auto;
+}
+
+#contacts form input[type="submit"]:hover {
+  background: blue;
+}
+
+/* footer */
+
+footer,
+footer a {
+  color: #fff;
+  font-weight: 400;
+}
+
+.footerIcons ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px 0;
+  padding-left: 0;
+}
+
+.footerIcons ul>li {
+  padding-right: 25px;
+  margin-left: 20px;
+}
+
+.footerInfo a:hover {
+  color: blue;
+}
+
+.footerInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 10%;
+}
+
+.newsletter form input {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter form input[type="submit"] {
+  margin-left: 25%;
+  width: 50px;
+  height: 20px;
+  background-color: rgb(8, 189, 189);
+  color: #fff;
+}
+
+.newsletter form input[type="submit"]:hover {
+  background: blue;
+}
+
+.footerInfo h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.copyright {
+  height: 5vh;
+  text-align: center;
+  background: rgb(180, 211, 212);
+}
+
+.copyright p {
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .footerInfo {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 20%;
+  }
+
+  .newsletter form input[type="submit"] {
+    margin-left: 80px;
+    padding-top: 8px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .footerInfo {
+    grid-template-columns: repeat(1, 3fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .footerInfo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
